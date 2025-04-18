@@ -25,6 +25,7 @@ public class Main {
             if(response.isSuccessful()){
                 Current current = response.body().getCurrent();
                 System.out.println("Temperature is " + current.getTempC() + " and it feels like " + current.getFeelslikeC());
+                System.out.println("Wind direction is "+ current.getWindDir());
             } else {
                 System.out.println("Something went wrong");
             }
