@@ -7,6 +7,17 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Location {
+    @Override
+    public String toString() {
+        return "Location{" +
+                "This is city: '" + name + '\'' + "\n"+
+                "In the region: '" + region + '\'' + "\n" +
+                "This city of country: '" + country + '\'' + "\n"+
+                "UTC from: '" + tz_id + '\'' +"\n"+
+                "Local time in this city is: " + localtime + '\'' +"\n"+
+                '}';
+    }
+
     private String name;
     private String region;
     private String country;
